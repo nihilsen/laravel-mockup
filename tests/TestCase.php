@@ -3,8 +3,8 @@
 namespace Nihilsen\LaravelMockup\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Nihilsen\LaravelMockup\LaravelMockupServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

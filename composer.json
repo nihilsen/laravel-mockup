@@ -30,8 +30,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Nihilsen\\LaravelMockup\\": "src",
-            "Nihilsen\\LaravelMockup\\Database\\Factories\\": "database/factories"
+            "Nihilsen\\LaravelMockup\\": "src"
         }
     },
     "autoload-dev": {
@@ -57,10 +56,7 @@
         "laravel": {
             "providers": [
                 "Nihilsen\\LaravelMockup\\LaravelMockupServiceProvider"
-            ],
-            "aliases": {
-                "LaravelMockup": "Nihilsen\\LaravelMockup\\Facades\\LaravelMockup"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",

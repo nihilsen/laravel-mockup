@@ -4,7 +4,6 @@ namespace Nihilsen\LaravelMockup;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Nihilsen\LaravelMockup\Commands\LaravelMockupCommand;
 
 class LaravelMockupServiceProvider extends PackageServiceProvider
 {
@@ -17,9 +16,6 @@ class LaravelMockupServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-mockup')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-mockup_table')
-            ->hasCommand(LaravelMockupCommand::class);
+            ->hasConfigFile();
     }
 }
