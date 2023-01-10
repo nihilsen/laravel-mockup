@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Nihilsen\LaravelMockup\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelMockupCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-mockup';
 
     public $description = 'My command';
 
