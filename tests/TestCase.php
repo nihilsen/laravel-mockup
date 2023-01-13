@@ -2,8 +2,7 @@
 
 namespace Nihilsen\LaravelMockup\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Nihilsen\LaravelMockup\LaravelMockupServiceProvider;
+use Nihilsen\LaravelMockup\MockupServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -11,16 +10,12 @@ class TestCase extends Orchestra
     protected function setUp(): void
     {
         parent::setUp();
-
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Nihilsen\\LaravelMockup\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            LaravelMockupServiceProvider::class,
+            MockupServiceProvider::class,
         ];
     }
 
