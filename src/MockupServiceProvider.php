@@ -22,9 +22,7 @@ class MockupServiceProvider extends PackageServiceProvider
          *
          * More info: https://github.com/spatie/laravel-package-tools
          */
-        $package
-            ->name('laravel-mockup')
-            ->hasConfigFile();
+        $package->name('laravel-mockup');
     }
 
     public function packageRegistered()
